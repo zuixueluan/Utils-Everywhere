@@ -30,7 +30,7 @@ public class ColorSelectorBuilder {
      * @return ColorSelectorBuilder
      */
     public ColorSelectorBuilder setSelectedColor(int color) {
-        mStates.add(new int[]{android.R.attr.state_selected});
+        mStates.add(0, new int[]{android.R.attr.state_selected});
         mColors.add(color);
         return this;
     }
@@ -54,7 +54,7 @@ public class ColorSelectorBuilder {
      * @return ColorSelectorBuilder
      */
     public ColorSelectorBuilder setPressedColor(int color) {
-        mStates.add(new int[]{android.R.attr.state_pressed});
+        mStates.add(0, new int[]{android.R.attr.state_pressed});
         mColors.add(color);
         return this;
     }
